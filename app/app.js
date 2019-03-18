@@ -6,6 +6,7 @@ var express = require('express'),
     qr = require('qr-image')
     ;
 
+console.log("Starting service on port " + (process.env.PORT || 4000));
 server.listen(process.env.PORT || 4000);
 
 app.use(express.static(path.resolve(path.join(__dirname, '/../public'))));
